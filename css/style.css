@@ -180,3 +180,11 @@
     display: none;
   }
   /**         --END--                   Do not touch this css                       **/
+
+  .carousel {
+      width: 100%;
+  }
+
+  img.slider-img {
+      width:100%;
+  }
