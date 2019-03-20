@@ -221,8 +221,22 @@
   header > nav > ul > li > a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #dd6a80;
+  }
+  header > nav > ul > li > a:hover {
+    color: #b2b1b1;
   }
 
-  
+  .order {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .order > a {
+    text-decoration: none;
+    color: #dd6a80;
+    font-size: 2rem;
+    font-family:  'Pacifico', cursive;
+  }
+
