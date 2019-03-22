@@ -195,11 +195,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
-  .logo{
+  h1.logo{
     text-align: center;
   }
 
-  .logo>a {
+  h1.logo>a {
     font-family: 'Pacifico', cursive;
     text-decoration: none;
     font-size: 3rem;
@@ -254,5 +254,90 @@
   }
   
   .grid3 > div {
-    width: 23%;
+    width: 22.3%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 16px;
+  }
+
+  .grid3 > div > img {
+    width: 100%;
+  }
+
+  footer {
+    background: black;
+    color: white;
+    margin-top: 40px;
+  }
+  
+  footer ul li a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #fff;
+  }
+  div#logo{
+    padding-top: 57px;
+  }
+
+  div#logo > a {
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+  }
+
+
+
+  div.copyright{
+    padding: 15px 0;
+    background: #333;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  .btn-outline-pink {
+    color: #dd6a80;
+    background-color: transparent;
+    background-image: none;
+    border-color: #dd6a80;
+  }
+
+  .btn-outline-pink:hover {
+    color: #fff;
+    background-color: #dd6a80;
+    border-color: #dd6a80;
+  }
+
+  footer div.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  footer div.row div{
+    width: 22.3%;
+    border-radius: 5px;
+    padding: 16px;
+  }
+
+  footer ul li {
+    list-style: none;
   }
