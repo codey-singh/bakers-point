@@ -191,6 +191,8 @@
 
   body {
     background: url(../img/bg.jpg) repeat-x;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .logo{
@@ -240,3 +242,17 @@
     font-family:  'Pacifico', cursive;
   }
 
+  #wrapper{
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .grid3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .grid3 > div {
+    width: 23%;
+  }
