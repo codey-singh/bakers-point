@@ -258,6 +258,7 @@ header > nav > ul > li > a:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 16px;
+  background-color: #faf8f8;
 }
 
 .grid3 > div > img {
