@@ -247,10 +247,14 @@ header > nav > ul > li > a:hover {
   max-width: 90%;
 }
 
-.grid3 {
+.grid3, .grid4 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.grid4 {
+  margin: 10px 0;
 }
 
 .grid3 > div {
@@ -261,7 +265,19 @@ header > nav > ul > li > a:hover {
   background-color: #faf8f8;
 }
 
+.grid4 > div {
+  width: 22.3%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #faf8f8;
+  padding: 12px;
+}
+
 .grid3 > div > img {
+  width: 100%;
+}
+
+.grid4 > div > img {
   width: 100%;
 }
 
@@ -287,7 +303,10 @@ div#logo > a {
   color: white;
 }
 
-
+.load-more {
+  text-align: center;
+  margin-top: 45px;
+}
 
 div.copyright{
   padding: 15px 0;
@@ -325,6 +344,19 @@ div.copyright{
 .btn-outline-pink:hover {
   color: #fff;
   background-color: #dd6a80;
+  border-color: #dd6a80;
+}
+
+.btn-outline-pink-inverse {
+  color: #fff;
+  background-color: #dd6a80;
+  border-color: #dd6a80;
+}
+
+.btn-outline-pink-inverse:hover {
+  color: #dd6a80;
+  background-color: transparent;
+  background-image: none;
   border-color: #dd6a80;
 }
 
