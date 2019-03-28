@@ -1,7 +1,7 @@
-/**          --START--    for normalization        Do not touch this css                       **/
+* --START-- for normalization Do not touch this css *
 html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
+    line-height: 1.15;
+     -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -19,14 +19,14 @@ h1 {
 }
 
 hr {
-    box-sizing: content-box; /* 1 */
-    height: 0; /* 1 */
-    overflow: visible; /* 2 */
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
 }
 
 pre {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
+    font-family: monospace, monospace;
+    font-size: 1em;
 }
 
 a {
@@ -34,9 +34,10 @@ a {
 }
 
 abbr[title] {
-    border-bottom: none; /* 1 */
-    text-decoration: underline; /* 2 */
-    text-decoration: underline dotted; /* 2 */
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+    
 }
 
 b,
@@ -47,8 +48,9 @@ strong {
 code,
 kbd,
 samp {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
+    font-family: monospace, monospace;
+    font-size: 1em;
+    
 }
 
 small {
@@ -80,19 +82,20 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 1 */
-    line-height: 1.15; /* 1 */
-    margin: 0; /* 2 */
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    
 }
 
 button,
-input { /* 1 */
+input {
     overflow: visible;
 }
 
 button,
-select { /* 1 */
+select {
     text-transform: none;
 }
 
@@ -123,12 +126,13 @@ fieldset {
 }
 
 legend {
-    box-sizing: border-box; /* 1 */
-    color: inherit; /* 2 */
-    display: table; /* 1 */
-    max-width: 100%; /* 1 */
-    padding: 0; /* 3 */
-    white-space: normal; /* 1 */
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+   
 }
 
 progress {
@@ -141,8 +145,8 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
+    box-sizing: border-box;
+    padding: 0;
 }
 
 [type="number"]::-webkit-inner-spin-button,
@@ -152,8 +156,8 @@ textarea {
 
 
 [type="search"] {
-    -webkit-appearance: textfield; /* 1 */
-    outline-offset: -2px; /* 2 */
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
 }
 
     [type="search"]::-webkit-search-decoration {
@@ -161,8 +165,8 @@ textarea {
     }
 
 ::-webkit-file-upload-button {
-    -webkit-appearance: button; /* 1 */
-    font: inherit; /* 2 */
+    -webkit-appearance: button;
+    font: inherit;
 }
 
 details {
@@ -180,7 +184,7 @@ template {
 [hidden] {
     display: none;
 }
-/**         --END--                   Do not touch this css                       **/
+
 
 .carousel {
     width: 100%;
@@ -270,15 +274,15 @@ header {
 }
 
     .grid2 > div.second {
-        display:none;
+        display: none;
     }
 
-    .grid3 > div {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 16px;
-        background-color: #faf8f8;
-    }
+.grid3 > div {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 16px;
+    background-color: #faf8f8;
+}
 
 .grid4 > div {
     width: 28.3%;
@@ -414,7 +418,6 @@ fieldset {
         -moz-transition: border-color 0.3s ease-in-out;
         transition: border-color 0.3s ease-in-out;
         border: 1px solid #AAA;
-       
     }
 
 #contact textarea {
@@ -432,7 +435,7 @@ fieldset {
     margin: 0 0 5px;
     padding: 10px;
     font-size: 15px;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
     #contact button[type="submit"]:hover {
@@ -482,8 +485,8 @@ fieldset {
 
     .accordion.active, .accordion:hover {
         background-color: #dd6a80;
-        color:white;
-        font-weight:bold;
+        color: white;
+        font-weight: bold;
     }
 
     .accordion:after {
@@ -494,13 +497,13 @@ fieldset {
         margin-left: 5px;
     }
 
-.accordion.active:after {
-    content: "\2212";
-}
+    .accordion.active:after {
+        content: "\2212";
+    }
 
-    .accordion:first-child{
+    .accordion:first-child {
         border-top-left-radius: 5px;
-        border-top-right-radius:5px;
+        border-top-right-radius: 5px;
     }
 
     .accordion:last-child {
@@ -515,6 +518,7 @@ fieldset {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+
 @media only screen and (min-width: 414px) {
     .grid3 {
         flex-direction: column;
@@ -533,76 +537,120 @@ fieldset {
         width: 93%;
     }
 
-    @media only screen and (min-width: 768px) {
-        .grid3 {
-            flex-direction: row;
-        }
-
-            .grid3 > div {
-                width: 28.3%;
-                margin-bottom: 10px;
-            }
-
-        li.active {
-            border: 1px solid #dd6a90;
-            border-radius: 16px;
-        }
-
-        .grid2 > div.second {
-            display: none;
-        }
+    header > nav > ul {
+        padding:0;
     }
 
-    @media only screen and (min-width: 992px) {
-        .grid3 {
-            flex-direction: row;
+        header > nav > ul > li {
+            width: 86%;
+            border: 1px #b2b1b1 solid;
+            display: inline-block;
+            padding: 7px;
+            margin-top: 2px;
+            border-radius: 7px;
         }
 
-            .grid3 > div {
-                width: 28.3%;
-                margin-bottom: 10px;
+            header > nav > ul > li.active {
+                border: 1px #dd6a80 solid;
             }
 
-        li.active {
-            border: 1px solid #dd6a90;
-            border-radius: 16px;
-        }
+}
 
-        .grid2 > div.second {
-            display: none;
-        }
 
-        #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-            width: 97.5%;
-        }
+
+@media only screen and (min-width: 768px) {
+    .grid3 {
+        flex-direction: row;
     }
 
-    @media only screen and (min-width: 1200px) {
-        .grid3 {
-            flex-direction: row;
+        .grid3 > div {
+            width: 28.3%;
+            margin-bottom: 10px;
         }
 
-            .grid3 > div {
-                width: 28.3%;
-                margin-bottom: 10px;
-            }
+    li.active {
+        border: 1px solid #dd6a90;
+        border-radius: 16px;
+    }
 
-        li.active {
-            border: 1px solid #dd6a90;
-            border-radius: 16px;
+    .grid2 > div.second {
+        display: none;
+    }
+
+    header > nav > ul > li {
+        display: inline-block;
+        padding: 1rem 2rem;
+        width: auto;
+        border-radius: 0;
+        border: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .grid3 {
+        flex-direction: row;
+    }
+
+        .grid3 > div {
+            width: 28.3%;
+            margin-bottom: 10px;
         }
 
-        .grid2 > div.second {
-            width: 30%;
-            display: block;
+    li.active {
+        border: 1px solid #dd6a90;
+        border-radius: 16px;
+    }
+
+    .grid2 > div.second {
+        display: none;
+    }
+
+    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+        width: 97.5%;
+    }
+
+    header > nav > ul > li {
+        display: inline-block;
+        padding: 1rem 2rem;
+        width: auto;
+        border-radius: 0;
+        border: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .grid3 {
+        flex-direction: row;
+    }
+
+        .grid3 > div {
+            width: 28.3%;
+            margin-bottom: 10px;
         }
 
-            .grid2 > div.second img {
-                width: 100%;
-            }
+    li.active {
+        border: 1px solid #dd6a90;
+        border-radius: 16px;
+    }
 
-        #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-            width: 98%;
+    .grid2 > div.second {
+        width: 30%;
+        display: block;
+    }
+
+        .grid2 > div.second img {
+            width: 100%;
         }
+
+    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+        width: 98%;
+    }
+
+    header > nav > ul > li {
+        display: inline-block;
+        padding: 1rem 2rem;
+        width: auto;
+        border-radius: 0;
+        border:none;
     }
 }
