@@ -270,6 +270,7 @@ header {
 }
 
     .grid2 > div.second {
+        display:none;
     }
 
     .grid3 > div {
@@ -431,6 +432,7 @@ fieldset {
     margin: 0 0 5px;
     padding: 10px;
     font-size: 15px;
+    border-radius:10px;
 }
 
     #contact button[type="submit"]:hover {
@@ -479,7 +481,10 @@ fieldset {
     #wrapper {
         max-width: 90%;
     }
-}
+
+    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+        width: 93%;
+    }
 
 @media only screen and (min-width: 768px) {
     .grid3 {
@@ -494,6 +499,10 @@ fieldset {
     li.active {
         border: 1px solid #dd6a90;
         border-radius: 16px;
+    }
+
+    .grid2 > div.second {
+        display: none;
     }
 }
 
@@ -511,6 +520,14 @@ fieldset {
         border: 1px solid #dd6a90;
         border-radius: 16px;
     }
+
+    .grid2 > div.second {
+        display: none;
+    }
+
+    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+        width: 97.5%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -526,5 +543,16 @@ fieldset {
     li.active {
         border: 1px solid #dd6a90;
         border-radius: 16px;
+    }
+    .grid2 > div.second {
+        width:30%;
+        display: block;
+    }
+    .grid2 > div.second img{
+        width: 100%;
+    }
+
+    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+        width: 98%;
     }
 }
