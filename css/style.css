@@ -467,7 +467,54 @@ fieldset {
     color: #888;
 }
 
+.accordion {
+    background-color: #ffbac8;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
 
+    .accordion.active, .accordion:hover {
+        background-color: #dd6a80;
+        color:white;
+        font-weight:bold;
+    }
+
+    .accordion:after {
+        content: '\002B';
+        color: #fff;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+
+.accordion.active:after {
+    content: "\2212";
+}
+
+    .accordion:first-child{
+        border-top-left-radius: 5px;
+        border-top-right-radius:5px;
+    }
+
+    .accordion:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 @media only screen and (min-width: 414px) {
     .grid3 {
         flex-direction: column;
@@ -486,73 +533,76 @@ fieldset {
         width: 93%;
     }
 
-@media only screen and (min-width: 768px) {
-    .grid3 {
-        flex-direction: row;
-    }
-
-        .grid3 > div {
-            width: 28.3%;
-            margin-bottom: 10px;
+    @media only screen and (min-width: 768px) {
+        .grid3 {
+            flex-direction: row;
         }
 
-    li.active {
-        border: 1px solid #dd6a90;
-        border-radius: 16px;
-    }
+            .grid3 > div {
+                width: 28.3%;
+                margin-bottom: 10px;
+            }
 
-    .grid2 > div.second {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .grid3 {
-        flex-direction: row;
-    }
-
-        .grid3 > div {
-            width: 28.3%;
-            margin-bottom: 10px;
+        li.active {
+            border: 1px solid #dd6a90;
+            border-radius: 16px;
         }
 
-    li.active {
-        border: 1px solid #dd6a90;
-        border-radius: 16px;
+        .grid2 > div.second {
+            display: none;
+        }
     }
 
-    .grid2 > div.second {
-        display: none;
-    }
-
-    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-        width: 97.5%;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .grid3 {
-        flex-direction: row;
-    }
-
-        .grid3 > div {
-            width: 28.3%;
-            margin-bottom: 10px;
+    @media only screen and (min-width: 992px) {
+        .grid3 {
+            flex-direction: row;
         }
 
-    li.active {
-        border: 1px solid #dd6a90;
-        border-radius: 16px;
-    }
-    .grid2 > div.second {
-        width:30%;
-        display: block;
-    }
-    .grid2 > div.second img{
-        width: 100%;
+            .grid3 > div {
+                width: 28.3%;
+                margin-bottom: 10px;
+            }
+
+        li.active {
+            border: 1px solid #dd6a90;
+            border-radius: 16px;
+        }
+
+        .grid2 > div.second {
+            display: none;
+        }
+
+        #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+            width: 97.5%;
+        }
     }
 
-    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-        width: 98%;
+    @media only screen and (min-width: 1200px) {
+        .grid3 {
+            flex-direction: row;
+        }
+
+            .grid3 > div {
+                width: 28.3%;
+                margin-bottom: 10px;
+            }
+
+        li.active {
+            border: 1px solid #dd6a90;
+            border-radius: 16px;
+        }
+
+        .grid2 > div.second {
+            width: 30%;
+            display: block;
+        }
+
+            .grid2 > div.second img {
+                width: 100%;
+            }
+
+        #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+            width: 98%;
+        }
     }
 }
