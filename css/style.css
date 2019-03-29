@@ -207,8 +207,11 @@ h1.logo {
     h1.logo > a {
         font-family: 'Pacifico', cursive;
         text-decoration: none;
-        font-size: 3rem;
-        color: black;
+        font-size: 4rem;
+        color:#dd6a80;
+        -webkit-text-fill-color: #dd6a80; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #b54c60;
     }
 
 header {
