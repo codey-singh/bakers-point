@@ -410,16 +410,16 @@ fieldset {
     width: 100%;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+#contact input[type="text"],#contact input[type="password"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
     width: 98%;
     border: 1px solid #CCC;
     background: #FFF;
     margin: 0 0 5px;
-    padding: 10px;
+    padding: 10px 0 10px 10px;
     border-radius: 5px;
 }
 
-    #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+    #contact input[type="text"]:hover,#contact input[type="password"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
         -webkit-transition: border-color 0.3s ease-in-out;
         -moz-transition: border-color 0.3s ease-in-out;
         transition: border-color 0.3s ease-in-out;
@@ -460,6 +460,30 @@ fieldset {
     border: 1px solid #999;
 }
 
+#contact a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #dd6a80;
+}
+
+form.login {
+    width: 30%;
+    margin: 7% auto 10% auto;
+    padding: 3%;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #faf8f8;
+}
+
+div#form-caption {   
+    text-decoration: none;
+    color: #dd6a80;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+}
 ::-webkit-input-placeholder {
     color: #888;
 }
@@ -525,6 +549,12 @@ fieldset {
     transition: max-height 0.2s ease-out;
 }
 
+address{
+    font-size: 0.9em;
+}
+address > a {
+    color: white;
+}
 @media only screen and (min-width: 320px) {
     .grid3 {
         flex-direction: column;
@@ -559,7 +589,15 @@ fieldset {
             header > nav > ul > li.active {
                 border: 1px #dd6a80 solid;
             }
-
+            form.login {
+                width: 90%;
+            }
+            footer div.row div {
+                width: 90%;
+                border-radius: 5px;
+                padding: 16px;
+                text-align: center;
+            }
 }
 
 
@@ -594,6 +632,9 @@ fieldset {
         border-radius: 0;
         border: none;
     }
+    form.login {
+        width: 50%;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -627,6 +668,9 @@ fieldset {
         width: auto;
         border-radius: 0;
         border: none;
+    }
+    form.login {
+        width: 40%;
     }
 }
 
@@ -667,5 +711,8 @@ fieldset {
         width: auto;
         border-radius: 0;
         border:none;
+    }
+    form.login {
+        width: 30%;
     }
 }
