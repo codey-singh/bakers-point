@@ -252,6 +252,16 @@ header {
         font-family: 'Pacifico', cursive;
     }
 
+    h2, blockquote{
+        text-decoration: none;
+        color: #dd6a80;
+        font-size: 2rem;
+        font-family: 'Pacifico', cursive;
+    }
+    blockquote{
+        float:right;
+    }
+
 #wrapper {
     margin: 0 auto;
     max-width: 75%;
