@@ -1,4 +1,11 @@
-(function(){
+/*
+ * 
+ * @author Bhajanpreet Singh
+ * @description minimal js functionality to run accordions
+ * and code to get year from current date
+ * */
+
+(function () {
 
     //Code for current year in the span.year
     var element = document.querySelector("span.year");
