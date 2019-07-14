@@ -24,4 +24,10 @@
       }
     });
   }
+
+  $(".bt").on("click", () => {
+    $(".navigation").toggle("slow", function() {
+      // Animation complete.
+    });
+  });
 })();
