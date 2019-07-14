@@ -222,7 +222,7 @@ header > nav > ul {
 }
 
 header > .bt {
-  padding: 0px;
+  padding: 5px 10px 1px 10px;
   position: absolute;
   top: 5px;
   right: 29px;
